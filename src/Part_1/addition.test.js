@@ -1,6 +1,9 @@
 
 // assign it to a variable so you can call it by that name when being tested
+
 const addition = require('./addition')
+
+
 // import addition from './addition'
 
 // test that the function exists
