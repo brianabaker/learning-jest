@@ -6,7 +6,7 @@ class App extends Component {
       <div>
         <h1>Welcome to Testing with Jest</h1>
       </div>
-    );
+    )
   }
 }
 
