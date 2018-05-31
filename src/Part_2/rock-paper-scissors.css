@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+}
+
+.game-container {
+    max-width:800px;
+    width: 100%;
+    margin: 10px auto;
+    border: 2px solid darkgrey;
+}
+
+.header {
+   margin: 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+h1 {
+   margin: 0;
+}
+
+#refresh {
+  line-height: 3;
+  font-weight: bold;
+  color: red;
+  cursor:pointer;
+}
+
+
+.option {
+    display:inline-block;
+    text-align:center;
+    width:32%;
+    background-color: darkseagreen;
+    border: 2px solid white;
+    cursor:pointer;
+}
+
+#declareWinner {
+  color: blue;
+}
+
+.winnerDiv {
+  text-align: center;
+  font-size: 2em;
+}

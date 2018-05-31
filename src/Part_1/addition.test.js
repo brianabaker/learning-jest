@@ -4,8 +4,8 @@
 const addition = require('./addition')
 
 
-// import addition from './addition'
 
+// import addition from './addition'
 // test that the function exists
 // the first line is just for you, the programmer to know what's being tested
 test('addition function exists', () => {
