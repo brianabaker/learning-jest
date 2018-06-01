@@ -8,6 +8,7 @@ const urlPartTwo = "&api_key=UE0dCN2WofIwVF0RPbpHo0Lz0k9VhqdG"
 
 const gifApi = (query) => {
   return fetch(urlPartOne + query + urlPartTwo)
+  .then(res => res.json())
 }
 
 export {gifApi}

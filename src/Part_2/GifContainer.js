@@ -18,17 +18,15 @@ class GifListContainer extends Component {
 
   displayGifs = (query) => {
     gifApi(query)
-      .then(res => res.json())
-      .then(json => console.log(json.meta.status))
-      // .then(json => {
-      //   let firstThreeGifs = json.data.slice(0, 3);
-      //   let urls = firstThreeGifs.map(
-      //     gif => gif.images.original.url.split("?")[0]
-      //   );
-      //   this.setState({
-      //     gifs: [...urls]
-      //   });
-      // });
+      .then(json => {
+        let firstThreeGifs = json.data.slice(0, 3);
+        let urls = firstThreeGifs.map(
+          gif => gif.images.original.url.split("?")[0]
+        );
+        this.setState({
+          gifs: [...urls]
+        });
+      });
   };
 
   // querySearch = (event) => {

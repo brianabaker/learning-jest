@@ -1,13 +1,16 @@
 
 import React from 'react'
 
-const api = require('./api')
+const request = require('./api')
 
+import * as container from './GifContainer'
+// import * as api from '../__mocks__/api'
 jest.mock('./api.js');
 
+// import * as mock from './GifContainer'
+
 it('should load gifs', () => {
-  return api.gifApi('sunshine')
-  .then(res => res.json())
+  return container.displayGifs('sunshine')
   .then(gifJSON => {
     expect(gifJSON).toBeDefined()
     expect(gifJSON.data[0].type).toEqual("gif")
