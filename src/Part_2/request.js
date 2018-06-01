@@ -6,8 +6,6 @@ const urlPartOne = "http://api.giphy.com/v1/gifs/search?q="
 
 const urlPartTwo = "&api_key=UE0dCN2WofIwVF0RPbpHo0Lz0k9VhqdG"
 
-const gifApi = (query) => {
+export default function request (query) {
   return fetch(urlPartOne + query + urlPartTwo)
 }
-
-export {gifApi}
