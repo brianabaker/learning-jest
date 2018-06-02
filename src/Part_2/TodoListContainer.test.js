@@ -7,19 +7,19 @@ import TodoItem from './TodoItem'
 const mockTodos= ["Learn Jest", "Get a Job"]
 
 describe('TodoListContainer Component', () => {
-  const wrapper = shallow(<TodoListContainer />);
+  const shallowWrap = shallow(<TodoListContainer />);
   const mounted = mount(<TodoListContainer />)
 
   test('it has a text input field', () => {
-    expect(wrapper.find('input[type="text"]').length).toBe(1);
+    expect(shallowWrap.find('input[type="text"]').length).toBe(1);
   })
 
   test('it has a submit button', () => {
-    expect(wrapper.find('.inputSubmit').length).toBe(1);
+    expect(shallowWrap.find('.inputSubmit').length).toBe(1);
   });
 
   test('it starts out with no todos', () => {
-    expect(wrapper.state('todos').length).toBe(0)
+    expect(shallowWrap.state('todos').length).toBe(0)
   })
 
   test('it can have todos in state', () => {
